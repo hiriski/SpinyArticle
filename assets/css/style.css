@@ -31,20 +31,23 @@ aside nav ul li {
 }
 
 button, .btn {
-  background-color: #1f77ff;
-  color: #fff;
-  border-radius: 3px;
-  padding: 12px 20px;
+  font-weight: bold;
+  padding: 12px 26px;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+.form-group label {
   font-weight: bold;
 }
 
-input, textarea {
-  padding: 10px 16px;
-  border-radius: 3px;
-  border: 2px solid #eff0ff;
+.form-control {
+  height: 48px;
+  padding: 1rem;
 }
-input:focus, textarea:focus {
-  border-color: #1f77ff;
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(10, 93, 253, 0.64);
 }
 
 * {
@@ -57,6 +60,11 @@ body {
   font-family: "HK Grotesk", sans-serif;
   font-size: 16px;
   background: #fbfbfb;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
 }
 
 a {
@@ -81,6 +89,16 @@ main .content {
   padding: 1rem;
 }
 
+#spinnerygoz {
+  padding: 0 4rem;
+}
+#spinnerygoz textarea {
+  min-height: 200px;
+}
+#spinnerygoz .form-text {
+  font-weight: bold;
+}
+
 aside {
   position: fixed;
   top: 0;
@@ -98,7 +116,7 @@ aside nav ul {
 }
 aside nav ul li {
   padding: 0 2.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 aside nav ul li a {
   width: 100%;

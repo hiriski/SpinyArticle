@@ -1,8 +1,24 @@
-input, textarea {
-  padding: 10px 16px;
-  border-radius: 3px;
-  border: 2px solid $primary-color-light;
+// input, textarea {
+//   padding: 10px 16px;
+//   border-radius: 3px;
+//   border: 2px solid $primary-color-light;
+//   &:focus {
+//     border-color: $primary-color;
+//   }
+// }
+
+.form-group {
+  margin-bottom: 2rem;
+  label {
+    font-weight: bold;
+  }
+}
+
+
+.form-control {
+  height: 48px;
+  padding: 1rem;
   &:focus {
-    border-color: $primary-color;
+    box-shadow: 0 0 0 .2rem rgba(10, 93, 253, 0.64);
   }
 }

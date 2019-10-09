@@ -10,6 +10,11 @@ body {
   background: $main-background;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
   color: $primary-color;
@@ -29,4 +34,14 @@ main {
 .box {
   border-radius : $border-radius;
   padding: 1rem;
+}
+
+#spinnerygoz {
+  padding: 0 4rem;
+  textarea {
+    min-height: 200px;
+  }
+  .form-text {
+    font-weight: bold;
+  }
 }

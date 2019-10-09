@@ -17,63 +17,43 @@
 <body>
   
 <div id="spiny-go">
-
 <?php require_once('partials/header.php'); ?>
 <?php require_once('partials/aside.php'); ?>
 
 
 	<main>
 		<div class="content">
-
-
-<form>
-<div class="form-group">
-<label for="exampleInputEmail1">Email address</label>
-<input
-type="email"
-class="form-control"
-id="exampleInputEmail1"
-aria-describedby="emailHelp"
-placeholder="Enter email">
-<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-</div>
-<div class="form-group">
-<label for="exampleInputPassword1">Password</label>
-<input
-type="password"
-class="form-control"
-id="exampleInputPassword1"
-placeholder="Password"></div>
-<div class="form-group form-check">
-<input type="checkbox" class="form-check-input" id="exampleCheck1">
-<label class="form-check-label" for="exampleCheck1">Check me out</label>
-</div>
-<button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-
-			<form name="spinnerygoz" action="spinnerygo.php" method="POST">
-				<div class="form">
-
+			<form id="spinnerygoz" name="spinnerygoz" action="spinnerygo.php" method="POST">
+				<div class="form-group">
+					<label for="nama_folder">Nama Folder</label>
+					<input class="form-control" type="text" name="namaklien" id="nama_folder" placeholder="Nama Folder">
+					<small class="form-text text-muted">Nama folder tempat artikel disimpan</small>
 				</div>
 
+				<div class="form-group">
+					<label for="jumlah_artikel">Jumlah Artikel</label>
+					<input class="form-control" type="number" id="jumlah_artikel" name="jum_artikel" placholder="Jumlah Artikel">
+					<small class="form-text text-muted">Jumlah artikel yang ingin di generate</small>
+				</div>
 
-				<b>Nama Folder</b><br>
-				Nama folder tempat artikel disimpan<br>
-				<input type="text" name="namaklien" placeholder="Nama Folder"><br><br>
-				<b>Teks Spinner</b><br>
-				Artikel spintax yang ingin diproses<br>
-				<textarea name="artikelz" placeholder="Teks Spinner"></textarea>
-				<br><br>
-				<b>Jumlah Artikel</b><br>
-				jumlah artikel yang ingin digenerate<br>
-				<input type="text" name="jum_artikel" placholder="Jumlah Artikel"><br><br>
-				<input type="submit" name="submit" value="Proses"><br>
+				<div class="form-group">
+					<label for="jumlah_artikel">Text Spinner</label>
+					<textarea class="form-control" name="artikelz" placeholder="Teks Spinner"></textarea>
+					<small class="form-text text-muted">Artikel spintax yang ingin diproses</small>
+				</div>
+
+				<div class="form-group">
+					<input class="btn btn-primary" type="submit" name="submit" value="Proses">
+				</div>
+
 			</form>
+
 		</div>
 	</main>
 	
 </div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
 
 <script src="assets/js/index.js"></script>
 </body>

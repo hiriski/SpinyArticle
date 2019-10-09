@@ -18,6 +18,13 @@
 					</div>
 
 				</div>
-			</div>
+			</div> <!-- #logo -->
+
+			<!-- <div id="search">
+				<div class="md-form mt-0">
+					<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+				</div>
+			</div> -->
+
 		</div>
 	</header>

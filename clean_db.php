@@ -29,7 +29,7 @@
           $kueri_ambilkey=mysqli_query($con,"delete from data_spinner");
           echo "<h1>Database berhasil dibersihkan</h1>";
         ?>
-          <a class="btn" href='index.php'><i class="material-icons">arrow_back</i> <span>Halaman Utama</span></a>
+          <a class="btn btn-primary" href='index.php'><i class="material-icons">arrow_back</i> <span>Halaman Utama</span></a>
       </div>
 		</div>s
 	</main>
