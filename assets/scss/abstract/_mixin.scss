@@ -4,16 +4,19 @@
   }
   #{$property}: $value;
 }
+
 @mixin box-shadow($property) {
   -webkit-box-shadow: $property;
   -moz-box-shadow: $property;
   box-shadow: $property;
 }
+
 @mixin transform($property) {
   -webkit-transform: $property;
   -moz-transform: $property;
   transform: $property;
 }
+
 // rotate
 @mixin rotate ($deg) {
 @include transform(rotate(#{$deg}deg));
@@ -23,14 +26,17 @@
 @mixin scale($scale) {
  @include transform(scale($scale));
 } 
+
 // translate
 @mixin translate ($x, $y) {
  @include transform(translate($x, $y));
 }
+
 // skew
 @mixin skew ($x, $y) {
  @include transform(skew(#{$x}deg, #{$y}deg));
 }
+
 //transform origin
 @mixin transform-origin ($origin) {
   moz-transform-origin: $origin;
@@ -39,6 +45,7 @@
 -webkit-transform-origin: $origin;
         transform-origin: $origin;
 }
+
 @mixin transition ($property) {
   -webkit-transition: $property;
   -moz-transition: $property;

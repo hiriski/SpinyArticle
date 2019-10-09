@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $base-font;
+  font-size: 16px;
+  background: $main-background;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+main {
+  padding-left: $aside-width;
+  padding-top: 70px;
+  .content {
+    padding: 100px;
+  }
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.box {
+  border-radius : $border-radius;
+  padding: 1rem;
+}

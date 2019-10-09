@@ -1,0 +1,38 @@
+aside {
+  @extend %animation;
+  position: fixed;
+  top: 0;
+  padding-top: $header-height * 2;
+  background-color: $light;
+  width : $aside-width;
+  height: 100vh;
+  left: - $aside-width;
+  
+  &[show-left=true] {
+    @extend %box-shadow-sm;
+    left: 0;
+  }
+
+  nav {
+    ul {
+      padding: 0;
+      li {
+        @extend %reset-li;
+        padding: 0 2.2rem;
+        margin-bottom: 1rem;
+        a {
+          width: 100%;
+          font-weight: bold;
+          height: 42px;
+          line-height: 42px;
+          display: block;
+          i {
+            margin-right: 1rem;
+            margin-top: -.3rem;
+          }
+        }
+      }
+    }
+  }
+
+}

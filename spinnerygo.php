@@ -40,8 +40,6 @@ $aha=$spintax->process($string);
 
 
 
-
-
 $dir_to_save = "./$nama_folder/";
 if (!is_dir($dir_to_save)) {
   mkdir($dir_to_save,0777,TRUE);

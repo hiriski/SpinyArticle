@@ -6,4 +6,217 @@
   --primary-color-hover: #055de0;
 }
 
+aside {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header #logo .app-name {
+  display: flex;
+  align-items: center;
+}
+
+header, aside[show-left=true] {
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.07);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.07);
+}
+
+aside nav ul li {
+  list-style: none;
+  margin: 0;
+}
+
+button, .btn {
+  background-color: #1f77ff;
+  color: #fff;
+  border-radius: 3px;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px 16px;
+  border-radius: 3px;
+  border: 2px solid #eff0ff;
+}
+input:focus, textarea:focus {
+  border-color: #1f77ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "HK Grotesk", sans-serif;
+  font-size: 16px;
+  background: #fbfbfb;
+}
+
+a {
+  text-decoration: none;
+  color: #1f77ff;
+}
+
+main {
+  padding-left: 340px;
+  padding-top: 70px;
+}
+main .content {
+  padding: 100px;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.box {
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  padding-top: 100px;
+  background-color: #fff;
+  width: 340px;
+  height: 100vh;
+  left: -340px;
+}
+aside[show-left=true] {
+  left: 0;
+}
+aside nav ul {
+  padding: 0;
+}
+aside nav ul li {
+  padding: 0 2.2rem;
+  margin-bottom: 1.5rem;
+}
+aside nav ul li a {
+  width: 100%;
+  font-weight: bold;
+  height: 42px;
+  line-height: 42px;
+  display: block;
+}
+aside nav ul li a i {
+  margin-right: 1rem;
+  margin-top: -0.3rem;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .header-inner {
+  background: #fff;
+  padding: 1rem 2rem;
+}
+header #logo {
+  width: 300px;
+}
+header #logo .app-name {
+  position: relative;
+}
+header #logo .app-name .img {
+  margin-right: 1rem;
+}
+header #logo .app-name .img img {
+  height: 32px;
+  width: 32px;
+}
+header #logo .app-name .title h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+header #logo .app-name .menu {
+  position: absolute;
+  right: 0;
+}
+
+.toggleLeft {
+  padding: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.toggleLeft-box {
+  width: 24px;
+  height: 17px;
+  display: inline-block;
+  position: relative;
+}
+
+.toggleLeft-inner, .toggleLeft-inner::before, .toggleLeft-inner::after {
+  width: 24px;
+  height: 2px;
+  background-color: #262626;
+  border-radius: 2px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.toggleLeft--spring .toggleLeft-inner::before {
+  top: 7px;
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.toggleLeft--spring .toggleLeft-inner::after {
+  top: 14px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.toggleLeft-inner::before {
+  top: -8px;
+}
+
+.toggleLeft-inner::after {
+  bottom: -8px;
+}
+
+.toggleLeft-inner::before, .toggleLeft-inner::after {
+  content: "";
+  display: block;
+}
+
+.toggleLeft--spring.active .toggleLeft-inner {
+  transition-delay: 0.22s;
+  background-color: transparent !important;
+}
+
+.toggleLeft--spring.active .toggleLeft-inner::before {
+  top: 0;
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+.toggleLeft--spring.active .toggleLeft-inner::after {
+  top: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(-45deg);
+}
+
 /*# sourceMappingURL=style.css.map */

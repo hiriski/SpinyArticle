@@ -1,6 +1,15 @@
 // Import everything
 
+@import 'abstract/variables';
 @import 'abstract/colors';
 @import 'abstract/mixin';
+@import 'abstract/extends';
+
+@import 'components/button';
+@import 'components/input';
+
+
+@import 'layout/main';
+@import 'layout/aside';
 @import 'layout/header';
 @import 'layout/footer';
