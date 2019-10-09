@@ -1,0 +1,67 @@
+#preload {
+  $loading-size : 80px;
+
+  %loading-size {
+    width: $loading-size;
+    height: $loading-size;
+    border-radius: 50%;
+  }
+
+  @extend %animation;
+  
+  display: block;
+  position: fixed;
+  z-index: 100;
+  @extend %full;
+}
+#preload.removed {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+#preload.removed > div {
+  box-shadow: 0 0 0 0px #fff;
+}
+#preload > div {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 250px);
+  -webkit-transition: all 1s cubic-bezier(0.94, 0.15, 0.19, 0.68);
+  -moz-transition: all 1s cubic-bezier(0.94, 0.15, 0.19, 0.68);
+  -ms-transition: all 1s cubic-bezier(0.94, 0.15, 0.19, 0.68);
+  -o-transition: all 1s cubic-bezier(0.94, 0.15, 0.19, 0.68);
+  transition: all 1s cubic-bezier(0.94, 0.15, 0.19, 0.68);
+  box-shadow: 0 0 0 1800px #fff;
+}
+#preload > div > ._a {
+  left: calc(50% - 13px);
+  top: calc(50% - 13px);
+  position: absolute;
+}
+#preload > div > ._a img {
+  width: 30px;
+  height: 30px;
+}
+
+._x0 {
+  left: calc(50% - 30px);
+  top: calc(50% - 30px);
+  @extend %loading-size;
+  position: absolute;
+}
+._x0 ._a, ._x0 ._b {
+  position: absolute;
+  border-right: 5px solid transparent;
+  @extend %loading-size;
+}
+._x0 ._b {
+  border-left: 5px solid $primary-color;
+  border-top: 5px solid $primary-color;
+  -webkit-animation: xRotate 1s cubic-bezier(0.3, 1.06, 0.71, 0.62) infinite 0.1s;
+  animation: xRotate 1s cubic-bezier(0.3, 1.06, 0.71, 0.62) infinite 0.1s;
+}

@@ -1,0 +1,7 @@
+<p><strong>Ini teks bold</strong></p>
+
+<h1><strong>Ini teks h1 dan bold</strong></h1>
+
+<p>Dan ini paragraf biasa tidak bold</p>
+
+<p><em>Ini miring</em></p>

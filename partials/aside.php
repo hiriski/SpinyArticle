@@ -1,4 +1,4 @@
-<aside show-left="true">
+<aside>
   <div id="left-section">
     <div class="content">
     <?php include"menu.php"; ?>
