@@ -205,7 +205,7 @@ body {
   font-family: "HK Grotesk", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  background: #fbfbfb;
+  background: #f7f7f7;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6,
@@ -228,8 +228,11 @@ main {
 main[push-main=true] {
   padding-left: 340px;
 }
+main[push-main=true] .content {
+  padding-left: 2.5rem;
+}
 main .content {
-  padding: 4rem;
+  padding: 1.2rem;
 }
 
 .material-icons {
@@ -257,21 +260,21 @@ main .content {
 
 aside {
   position: fixed;
-  top: 0;
-  padding-top: 150px;
+  top: 84px;
+  padding-top: 3rem;
   background-color: #fff;
   width: 340px;
   height: 100vh;
   left: -340px;
 }
 aside[show-left=true] {
-  left: 0;
+  left: 1.2rem;
 }
 aside nav ul {
   padding: 0;
 }
 aside nav ul li {
-  padding: 0 2.5rem;
+  padding: 0 3rem;
   margin-bottom: 1rem;
 }
 aside nav ul li a {

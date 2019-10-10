@@ -49,16 +49,20 @@
 					<textarea class="form-control" name="artikelz" placeholder="Teks Spinner"></textarea>
 					<small class="form-text text-muted">Artikel spintax yang ingin diproses</small>
 				</div> -->
-
-				<div class="form-group">
-					<label for="ckeditor">Artikel Spinner</label>
-					<textarea id="ckeditor" class="ckeditor form-control" name="artikelz" placeholder="Teks Spinner"></textarea>
-					<small class="form-text text-muted">Artikel spintax yang ingin diproses</small>
+				
+			<div class="row">
+				<div class="col-12">
+					<div class="form-group">
+						<label for="ckeditor">Artikel Spinner</label>
+						<textarea id="ckeditor" class="ckeditor form-control" name="artikelz" placeholder="Teks Spinner"></textarea>
+						<small class="form-text text-muted">Artikel spintax yang ingin diproses</small>
+					</div>
 				</div>
+			</div>
 
-				<div class="form-group text-md-center">
-					<button type="submit" name="submit" class="btn btn-primary"><span>Proses</span> <i class="material-icons">arrow_forward</i></button>
-				</div>
+			<div class="form-group text-md-center">
+				<button type="submit" name="submit" class="btn btn-primary"><span>Proses</span> <i class="material-icons">arrow_forward</i></button>
+			</div>
 
 			</form>
 

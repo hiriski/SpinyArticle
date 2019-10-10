@@ -1,8 +1,8 @@
 aside {
   @extend %animation;
   position: fixed;
-  top: 0;
-  padding-top: $header-height * 3;
+  top: 84px;
+  padding-top: 3rem;
   background-color: $light;
   width : $aside-width;
   height: 100vh;
@@ -10,7 +10,7 @@ aside {
   
   &[show-left=true] {
     @extend %box-shadow-sm;
-    left: 0;
+    left: 1.2rem;
   }
 
   nav {
@@ -18,7 +18,7 @@ aside {
       padding: 0;
       li {
         @extend %reset-li;
-        padding: 0 2.5rem;
+        padding: 0 3rem;
         margin-bottom: 1rem;
         a {
           width: 100%;

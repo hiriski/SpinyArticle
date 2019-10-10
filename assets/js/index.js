@@ -4,13 +4,10 @@ function ToggleBase (elem, target) {
   this.target = target;
 
   this.action = function(stateName) {
-
       this.target.setAttribute(stateName, this.target.getAttribute(stateName) === "true" ? "false" : "true");
       this.elem.classList.toggle("active");
   }
 };
-
-
 
 // Show aside
 var aside = {
@@ -25,8 +22,6 @@ var aside = {
     this.btn.classList.toggle('active');
   }
 }
-
-
 aside.btn.addEventListener("click", function(e) {
   aside.action(e);
 });

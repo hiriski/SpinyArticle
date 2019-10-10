@@ -29,11 +29,14 @@ main {
   @extend %animation;
   &[push-main=true] {
     padding-left: $aside-width;
+    .content {
+      padding-left: 2.5rem;
+    }
   }
   padding-left: 0;
   padding-top: 64px;
   .content {
-    padding: 4rem;
+    padding: 1.2rem;
   }
 }
 

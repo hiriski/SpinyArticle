@@ -8,6 +8,9 @@
       <a href="clean_db.php"><i class="material-icons">delete</i> <span>Clean DB</span></a>
     </li>
     <li>
+      <a href=""><i class="material-icons">add_box</i> <span>Tambah Tabel</span></a>
+    </li>
+    <li>
       <a href="replace_string.php"><i class="material-icons">cached</i> <span>Replace String</span></a>
     </li>
   </ul>
