@@ -39,7 +39,15 @@ var removeLoading = function(elem) {
       console.log("Preload Removed!");
   }, 1200);
 };
-
+  
 window.addEventListener("DOMContentLoaded", function() {
   removeLoading(document.getElementById("preload"));
+}); 
+
+
+
+// Table 
+// Jika table kosong tampilkan pesan
+$(document).ready(function(){
+  
 });

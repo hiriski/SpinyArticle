@@ -11,10 +11,12 @@ header {
   width: 100%;
   .header-inner {
     background: $light;
-    padding: 1rem 2rem;
   }
   #logo {
-    width: 300px;
+    float: left;
+    width: $aside-width;
+    background-color: $primary-color-dark;
+    padding: 1rem 2rem;
     .app-name {
       @extend %flex-align-center;
       position: relative;
@@ -29,12 +31,25 @@ header {
           font-size: 22px;
           font-weight: bold;
           margin: 0;
+          color: $light;
         }
       }
       .menu {
         position: absolute;
         right: 0;
       }
+    }
+  }
+}
+
+#navbar-area {
+  float: right;
+  width: 100% - $aside-width;
+  .navbar {
+    height: 74px;
+    padding: {
+      left: 2rem;
+      right: 2rem;
     }
   }
 }
@@ -64,7 +79,7 @@ header {
 .toggleLeft-inner, .toggleLeft-inner::before, .toggleLeft-inner::after {
   width: 24px;
   height: 2px;
-  background-color: $main-color;
+  background-color: $light;
   border-radius: 2px;
   position: absolute;
   transition-property: transform;

@@ -21,13 +21,13 @@
 <?php require_once('partials/header.php'); ?>
 <?php require_once('partials/aside.php'); ?>
 
-	<main>
+	<main push-main="true">
 		<div class="content">
-      <div class="box">
-        <?php 
+      <div class="box text-center">
+        <?php
           $con=mysqli_connect("localhost","root","","spinygox");
           $kueri_ambilkey=mysqli_query($con,"delete from data_spinner");
-          echo "<h1>Database berhasil dibersihkan</h1>";
+          echo "<div class=\"main-heading\"><h1><i class=\"material-icons\">delete</i> <span>Database berhasil dibersihkan</span></h1></div>";
         ?>
           <a class="btn btn-primary" href='index.php'><i class="material-icons">arrow_back</i> <span>Halaman Utama</span></a>
       </div>

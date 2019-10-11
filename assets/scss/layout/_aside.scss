@@ -1,16 +1,16 @@
 aside {
   @extend %animation;
   position: fixed;
-  top: 84px;
-  padding-top: 3rem;
-  background-color: $light;
+  top: 0;
+  padding-top: 110px;
+  background-color: $primary-color-dark;
   width : $aside-width;
   height: 100vh;
   left: - $aside-width;
   
   &[show-left=true] {
     @extend %box-shadow-sm;
-    left: 1.2rem;
+    left: 0;
   }
 
   nav {
@@ -18,7 +18,7 @@ aside {
       padding: 0;
       li {
         @extend %reset-li;
-        padding: 0 3rem;
+        padding: 0 2rem;
         margin-bottom: 1rem;
         a {
           width: 100%;
@@ -26,6 +26,7 @@ aside {
           height: 42px;
           line-height: 42px;
           display: block;
+          color: $light;
           i {
             margin-right: 1rem;
             margin-top: -.3rem;
@@ -34,5 +35,11 @@ aside {
       }
     }
   }
+
+.btn-show-data {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
 
 }

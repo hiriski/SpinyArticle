@@ -27,3 +27,42 @@
     color: $gray;
   }
 }
+
+.form-group {
+  margin-bottom: 3rem;
+}
+textarea {
+  min-height: 200px;
+}
+.form-text {
+  font-weight: bold;
+}
+
+
+
+.inputFile {
+  margin-top: 1rem;
+}
+
+.input-file {
+  input[type="file"] {
+      visibility: hidden;
+      width: 1px;
+      height: 1px;
+    }
+    
+    .btn {
+      cursor: pointer;
+      background-color: #ddd;
+      border-color: #ccc;
+      color: #333;
+      padding: 20px 30px;
+  }
+  
+  .file-selected {
+      text-align: center;
+      width: 100%;
+      display: block;
+      margin-top: 5px;
+  }
+}
