@@ -37,7 +37,7 @@ var removeLoading = function(elem) {
   setTimeout(function(){
       elem.className = "removed";
       console.log("Preload Removed!");
-  }, 1200);
+  }, 500);
 };
   
 window.addEventListener("DOMContentLoaded", function() {

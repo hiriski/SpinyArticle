@@ -29,7 +29,7 @@ $jum_artikel    = $_POST['jum_artikel'];
 $nama_folder    = $_POST['namaklien'];
 $string         = $_POST['artikelz'];
 
-for ( $i = 1; $i < $jum_artikel; $i++) {
+for ( $i = 1; $i <= $jum_artikel; $i++) {
 //echo $spintax->process($string);
 /* NESTED SPINNING EXAMPLE */
 
@@ -51,6 +51,7 @@ file_put_contents($dir_to_save.$filenya, $spintax->process($string), FILE_APPEND
 
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,13 +73,14 @@ file_put_contents($dir_to_save.$filenya, $spintax->process($string), FILE_APPEND
 <div id="spiny-go">
 <?php require_once('partials/header.php'); ?>
 <?php require_once('partials/aside.php'); ?>
+<?php require_once('partials/modal-help.php'); ?>
+<?php require_once('partials/modal-table.php'); ?>
+<?php require_once('partials/modal-download-sample.php'); ?>
 
 	<main push-main="true">
 		<div class="content">
       <div class="box text-center">
         <?php
-          $con=mysqli_connect("localhost","root","","spinygox");
-          $kueri_ambilkey=mysqli_query($con,"delete from data_spinner");
           echo "<div class=\"main-heading\"><h1><i class=\"material-icons\">folder</i> <span>Folder berhasil dibuat</span></h1></div>";
         ?>
           <a class="btn btn-primary" href='index.php'><i class="material-icons">arrow_back</i> <span>Halaman Utama</span></a>

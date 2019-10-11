@@ -42,20 +42,25 @@
 				<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="index.php"><i class="material-icons">delete</i> <span>Home</span> <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="clean_db.php"><i class="material-icons">delete</i> <span>Bersihkan Database</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Clean DB</a>
+								<a class="nav-link replace-string active" href="replace_string.php"><i class="material-icons">cached</i> <span>Replace String</span></a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link replace-string active" href="" data-toggle="modal" data-target="#download"><i class="material-icons">cloud_download</i> <span>Sample Keyword & Article</span></a>
 						</li>
 					</ul>
 					<span class="navbar-text">
-						<a href=""><i class="material-icons">cached</i> <span>Replace String</span></a>
+						<!-- Button modal help -->
+							<a class="nav-link" href="" data-toggle="modal" data-target="#help"><i class="material-icons">help_outline</i> <span>Bantuan</span></a>
 					</span>
 				</div>
 			</nav>
 		</div> <!-- #navbar-area -->
-
-
-
+		
 	</div>
 </header>

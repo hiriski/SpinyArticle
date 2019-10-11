@@ -1,0 +1,22 @@
+#success-replace {
+  height: 42px;
+  overflow: hidden;
+  position: relative;
+  @extend %animation;
+}
+.success-replace-inner {
+  @extend %animation;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  > div {
+    @extend %animation;
+    font-size: 28px;
+    color:#278427;
+    font-weight: 700;
+    i {
+      font-size: 28px !important;
+    }
+  }
+}

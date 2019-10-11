@@ -70,3 +70,21 @@
     transform: scale(1);
   }
 }
+
+
+
+
+// Rotate 
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+
+// cara konsumsi
+.sometag {
+  animation: rotation 2s infinite linear;
+}

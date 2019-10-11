@@ -1,0 +1,13 @@
+.nav-link {
+  margin-right: 1rem;
+  &:hover {
+    @extend %border-radius;
+    background-color: #fbfbfb;
+    color: $primary-color !important;
+  }
+  &.replace-string {
+    > i {
+      -webkit-animation: rotation 2s infinite linear;
+    }
+  }
+}

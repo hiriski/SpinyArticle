@@ -65,66 +65,14 @@ if (isset($_POST["import"])) {
 <div id="spiny-go">
 <?php require_once('partials/header.php'); ?>
 <?php require_once('partials/aside.php'); ?>
+<?php require_once('partials/modal-help.php'); ?>
+<?php require_once('partials/modal-table.php'); ?>
+<?php require_once('partials/modal-download-sample.php'); ?>
 
 	<main push-main="true">
 
 		<div class="content">
 			<div class="box import text-center">
-
-<!-- Modal -->
-<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
-  <div class="modal-spinner modal-dialog modal-xl modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Table data_spinner</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-				<div class="overflow-auto">
-					<?php
-							$sqlSelect = "SELECT * FROM data_spinner";
-							$result = mysqli_query($conn, $sqlSelect);
-							
-							if (mysqli_num_rows($result) > 0) {
-						?>
-							<table id='userTable' class="table table-border">
-							<thead>
-									<tr class="table thead-dark">
-											<th>ID</th>
-											<th>Keyword</th>
-											<th>Nama Klien</th>
-											<th>No. File</th>
-									</tr>
-							</thead>
-								<?php
-									
-									while ($row = mysqli_fetch_array($result)) {
-											?>
-											
-									<tbody>
-									<tr>
-											<td><?php  echo $row['id']; ?></td>
-											<td><?php  echo $row['keyword']; ?></td>
-											<td><?php  echo $row['namaklien']; ?></td>
-											<td><?php  echo $row['no_file']; ?></td>
-									</tr>
-											<?php
-									}
-									?>
-									</tbody>
-					</table>
-					<?php } ?>
-				</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 				<div class="row">
 					<div class="col-12">
@@ -156,7 +104,6 @@ if (isset($_POST["import"])) {
 		</div>
 
 
-
 		<div class="content">
 			<div class="box">
 
@@ -170,7 +117,6 @@ if (isset($_POST["import"])) {
 							<small class="form-text text-muted">Nama folder tempat artikel disimpan</small>
 						</div>
 					</div>
-
 
 					<div class="col-sm-12 col-lg-6">
 						<div class="form-group">
@@ -203,6 +149,10 @@ if (isset($_POST["import"])) {
 	
 </div>
 
+
+
+
+
 <script src="assets/js/index.js"></script>
 
 
@@ -211,7 +161,7 @@ if (isset($_POST["import"])) {
 $('input[type="file"]').each(function() {
     // get label text
     var label = $(this).parents('.form-group').find('label').text();
-    label = (label) ? label : '<i class="material-icons">save_alt</i> Upload File';
+    label = (label) ? label : '<i class="material-icons">save_alt</i> Upload csv file';
 
     // wrap the file input
     $(this).wrap('<div class="input-file"></div>');
@@ -240,8 +190,6 @@ $('.input-file .btn').click(function() {
     $(this).siblings('input[type="file"]').trigger('click');
 });
 </script>
-
-
 
 </body>
 </html>	

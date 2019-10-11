@@ -6,7 +6,7 @@
   --primary-color-hover: #055de0;
 }
 
-aside, main, #preload {
+aside, main, .success-replace-inner > div, .success-replace-inner, #success-replace, #preload {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -28,6 +28,10 @@ header, aside[show-left=true], .box {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+}
+
+.nav-link:hover {
+  border-radius: 3px;
 }
 
 aside nav ul li {
@@ -103,6 +107,18 @@ aside nav ul li {
     transform: scale(1);
   }
 }
+@keyframes ratation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sometag {
+  animation: rotation 2s infinite linear;
+}
+
 #preload {
   display: block;
   position: fixed;
@@ -228,6 +244,46 @@ textarea {
   width: 100%;
   display: block;
   margin-top: 5px;
+}
+
+.nav-link {
+  margin-right: 1rem;
+}
+.nav-link:hover {
+  background-color: #fbfbfb;
+  color: #1f77ff !important;
+}
+.nav-link.replace-string > i {
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+.modal-help .help {
+  padding: 2rem;
+}
+
+.download {
+  padding: 2rem 0;
+}
+
+#success-replace {
+  height: 42px;
+  overflow: hidden;
+  position: relative;
+}
+
+.success-replace-inner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+.success-replace-inner > div {
+  font-size: 28px;
+  color: #278427;
+  font-weight: 700;
+}
+.success-replace-inner > div i {
+  font-size: 28px !important;
 }
 
 * {
